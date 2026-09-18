@@ -11,12 +11,13 @@ fun main() {
     использовать стандартное значение 0.5.
      */
 
-    var soundIntensity: Double = 80.0
-    val attenuationCoefficient: Double? = null
+    var soundIntensity = 80.0
 
-    soundIntensity *= (attenuationCoefficient ?: 0.5)
+    val coefficient: Double? = null
 
-    println("Интенсивность звука после затухания: $soundIntensity")
+    soundIntensity *= (coefficient ?: 0.5)
+
+    println("Интенсивность звука: $soundIntensity")
 
     /*
     Задача 2
@@ -27,9 +28,10 @@ fun main() {
      */
 
     val deliveryCost: Double? = null
-    val cargoCost: Double = 1000.0
 
-    val totalDeliveryCost = (deliveryCost ?: 50.0) + cargoCost * 0.005
+    val cargoCost: Double = (deliveryCost ?: 50.0) * 0.005
+
+    val totalDeliveryCost = (deliveryCost ?: 50.0) + cargoCost
 
     println("Полная стоимость доставки: $$totalDeliveryCost")
 
