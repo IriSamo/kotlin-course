@@ -1,29 +1,4 @@
 package org.example.lessons.lesson07.homeworks
-
-import org.example.advancedTask1
-import org.example.advancedTask2
-import org.example.advancedTask3
-import org.example.advancedTask4
-import org.example.advancedTask5
-import org.example.advancedTask5_1
-import org.example.advancedTask6
-import org.example.task1
-import org.example.task10
-import org.example.task11
-import org.example.task12
-import org.example.task12_continue
-import org.example.task13
-import org.example.task13_continue
-import org.example.task2_1
-import org.example.task2_2
-import org.example.task3
-import org.example.task4
-import org.example.task5
-import org.example.task6
-import org.example.task7
-import org.example.task8_1
-import org.example.task8_2
-import org.example.task9
 import kotlin.math.pow
 
 //-Задания для цикла for
@@ -38,14 +13,14 @@ fun task1() {
 }
 
 //2. Напишите цикл for, который выводит четные числа от 1 до 10.
-fun task2_1() {
+fun task21() {
     println("\ntask2_1")
     for (i in 2..10 step 2) {
         println(i)
     }
 }
 
-fun task2_2() {
+fun task22() {
     println("\ntask2_2")
     for (i in 2..10) {
         if (i % 2 == 0) {
@@ -100,14 +75,14 @@ fun task7(size: Int) {
 //--Цикл while
 
 //8. Создайте цикл while, который выводит квадраты чисел от 1 до 5.
-fun task8_1() {
+fun task81() {
     println("\ntask8_1")
     for (i in 1..5) {
         println(i * i)
     }
 }
 
-fun task8_2() {
+fun task82() {
     println("\ntask8_2")
     for (i in 1..5) {
         println(i.toDouble().pow(2.0).toInt())
@@ -171,7 +146,7 @@ fun task13() {
 
 //--Использование continue
 //12. В цикле for от 1 до 10 используйте continue, чтобы пропустить четные числа.
-fun task12_continue() {
+fun task12Continue() {
     println("\ntask12_continue")
     for (i in 1..10) {
         if (i % 2 == 0) {
@@ -182,7 +157,7 @@ fun task12_continue() {
 }
 
 //13. Напишите цикл while, который выводит числа от 1 до 10, но пропускает числа, кратные 3.
-fun task13_continue() {
+fun task13Continue() {
     println("\ntask13_continue")
     var i = 1
     while (i <= 10) {
@@ -276,27 +251,26 @@ fun advancedTask6(arg: Int) {
 
 fun main() {
     task1()
-    task2_1()
-    task2_2()
+    task21()
+    task22()
     task3()
     task4()
     task5()
     task6()
     task7(10)
-    task8_1()
-    task8_2()
+    task81()
+    task82()
     task9()
     task10()
     task11()
     task12()
     task13()
-    task12_continue()
-    task13_continue()
+    task12Continue()
+    task13Continue()
     advancedTask1()
     advancedTask2(10)
     advancedTask3(5)
     advancedTask4(10)
     advancedTask5()
     advancedTask6(10)
-    advancedTask5_1()
 }
